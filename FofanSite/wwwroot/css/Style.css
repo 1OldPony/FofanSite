@@ -1,0 +1,516 @@
+﻿img {
+    width:100%
+}
+
+body {
+    margin:0;
+    font-family:Tahoma;
+    font-size:1.2rem;
+}
+
+    body a {
+        text-decoration:none;
+        color:black;
+    }
+
+.row {
+    width: 100%;
+    padding-bottom:2%;
+    padding-top:2%;
+    position:relative;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    position:relative;
+}
+
+.topHat {
+    display: flex;
+}
+
+/*.logo {
+    background-color: white;
+}
+
+.name {
+    background-color: white;
+}
+
+.contacts {
+    background-color:white;
+}*/
+
+/*.header {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}*/
+
+.block {
+    display: flex;
+    justify-content:center;
+}
+
+#addEquip.block {
+    width:100%
+}
+
+.triangleRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 15px 0 15px;
+    border-color: #152c56 transparent transparent transparent;
+    z-index:999999;
+}
+
+.romb {
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #000000;
+    position: relative;
+    top: 15px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+    .romb:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        border: 10px solid transparent;
+        border-top-color: #000000;
+    }
+
+.triangleRev {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent #ffffff transparent;
+    z-index: 999999;
+}
+
+#reverse.block {
+    flex-direction: row-reverse;
+}
+
+#main.gallery {
+    max-width: 60%;
+    margin-right: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+.leftFirstBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topCharBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+    text-align:left;
+    width:100%;
+}
+
+.characteristicLine {
+    display: flex;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-bottom: 1px dashed grey;
+}
+
+.charLineFirst {
+    width: 70%;
+    text-align: left
+}
+
+.charLineSecond {
+    width: 30%;
+    text-align: right
+}
+
+.price {
+    display: flex;
+    height: 10%;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.priceText {
+    width: 50%;
+    text-align: end;
+}
+
+.priceNumber {
+    width: 50%;
+}
+
+.buttonTop {
+    font-size: 2rem;
+    background-color:white;
+}
+
+.tesis {
+    font-size:1.8rem;
+    display:flex;
+    align-items:center;
+    font-family:cursive;
+}
+
+.tesisText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+#inside.tesis {
+    width: 100%;
+}
+
+.baseComplect {
+    width: 40%;
+    margin-right: 2%;
+}
+
+.gallery {
+    margin-right: 2%;
+    max-width: 49%;
+    overflow: hidden;
+    position: relative;
+}
+
+#rightGallery.gallery {
+    margin-left: 2%;
+    margin-right: 0;
+}
+
+.gallery[name="baseComplect"] {
+    max-width: 45%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content:space-between;
+}
+
+.optionDesc {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align:left;
+    padding: 10%;
+}
+
+.button {
+    font-size: 1.5rem;
+    height: 50px;
+    margin-right:1%;
+}
+
+.slidesRow {
+    display: flex;
+    transition: transform 0.6s ease;
+    /*width: 500%;*/
+}
+
+.slide {
+    display:flex;
+    align-items:center;
+    max-width:1000px;
+}
+
+#fullView {
+    padding:5px;
+    padding-bottom:1px;
+    background-color:white;
+}
+
+.control {
+    position: absolute;
+    bottom: 0;
+    width: 3rem;
+    margin: 33%;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+}
+
+    .control[name="block"] {
+        position: absolute;
+        bottom: 0;
+        width: 3rem;
+        margin: 16%;
+        margin-left: 0;
+        margin-right: 0;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+    }
+
+#left.control {
+    left: 10px;
+}
+
+#right.control {
+    right: 10px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 99999;
+}
+
+.dot {
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 2%;
+    color: #fff;
+    height: 0.5em;
+    position: relative;
+    width: 0.5em;
+    cursor: pointer;
+}
+
+    .dot:hover {
+        background: red;
+    }
+
+.currentDot {
+    background: red;
+    border-radius: 50%;
+    margin: 2%;
+    color: #fff;
+    height: 0.5em;
+    position: relative;
+    width: 0.5em;
+    cursor: pointer;
+}
+
+.cross {
+    background: #ffffff;
+    height: 50px;
+    width: 15px;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top: 2%;
+    margin-right: 5%;
+    right: 20px;
+    top: 20px;
+    z-index: 9999999;
+}
+
+    .cross:after {
+        content: "";
+        height: 15px;
+        width: 50px;
+        background: #ffffff;
+        position: absolute;
+        left: -18px;
+        top: 18px;
+        z-index: 9999999;
+    }
+
+.fullFoto {
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.basics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    padding: 1%;
+}
+
+.constructor {
+    display: flex;
+    flex-direction: column;
+}
+
+.complectBlocks {
+    display: flex;
+    margin-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.complectBlock {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+    width: 50%;
+}
+
+#basic.complectBlock {
+    width: 100%;
+    margin-right: 0;
+    height:100%;
+    justify-content:space-between;
+}
+
+#second.complectBlock {
+    margin-right: 0
+}
+
+.complectHeader {
+    display: flex;
+    font-weight: 800;
+    margin-bottom: 4%
+}
+
+.complectUnit {
+    display: flex;
+    margin-bottom: 2%;
+    align-items: center
+}
+
+#top.complectUnit {
+    justify-content: space-between;
+    border-bottom: 1px dashed grey;
+}
+
+@media (max-width:720px) {
+    .header {
+        margin-bottom: 0;
+    }
+
+    .row {
+        padding:0;
+    }
+
+    .block {
+        flex-direction:column;
+        margin-bottom: 0;
+    }
+
+    #reverse.block {
+        flex-direction: column;
+    }
+
+    #main.gallery {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .leftFirstBlock {
+        width: 100%;
+    }
+
+    .price {
+        padding-bottom:2%;
+    }
+
+    .gallery {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+        .gallery[name="baseComplect"] {
+            max-width: 100%;
+        }
+
+    .tesis {
+        margin-bottom: 0;
+        padding: 1%;
+    }
+
+    .description {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .button {
+        height:auto
+    }
+
+    .optionDesc {
+        width: 98%;
+        padding: 1%;
+    }
+
+    #rightGallery.gallery {
+        margin-left: 0;
+    }
+
+    .control {
+        margin: 35%;
+        margin-left:0;
+        margin-right:0;
+    }
+
+        .control[name="block"] {
+            margin: 38%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    .basics {
+        width: 98%;
+    }
+
+    .constructor {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .complectBlocks {
+        flex-direction: column;
+    }
+
+    .complectBlock {
+        width: 100%;
+        margin-right:0;
+    }
+
+    #second.complectBlock {
+        margin-top:2%;
+    }
+}
